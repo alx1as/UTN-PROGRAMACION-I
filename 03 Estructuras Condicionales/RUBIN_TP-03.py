@@ -64,7 +64,7 @@ print(f"Media: {media}")
 print(f"Mediana: {mediana}")
 print(f"Moda: {moda}")
 
-#7) Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado termina con vocal, añadir un signo de exclamación al final e imprimir el string resultante por pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por pantalla."""
+#7) Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado termina con vocal, añadir un signo de exclamación al final e imprimir el string resultante por pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por pantalla.
 
 palabra = input("Escribe una palabra o frase: ")
 ultima_letra= palabra[-1] #indexación negativa para tomar última letra.
@@ -72,3 +72,30 @@ if ultima_letra == "a" or ultima_letra == "e" or ultima_letra == "i" or ultima_l
     print(f"{palabra}!")
 else:
     print(f"{palabra}")
+
+#8) Solicitar nombre y números 1 (mayus), 2(min) o 3 (title) y preguntar.
+nombre=input("Por favor escriba su nombre: ")
+tipo=int(input("Por favor ingrese el número deseado. 1: Si quiere su nombre en mayúsculas. 2: Si lo quiere en minúsculas. 3: Si lo quiere con la primera letra en mayúscula: "))
+if tipo==1:
+    print(nombre.upper())
+elif tipo==2:
+    print(nombre.lower())
+elif tipo==3:
+    print(nombre.title())
+
+#9) Escribir un programa que pida al usuario la magnitud de un terremoto, clasifique la magnitud en una de las siguientes categorías según la escala de Richter e imprima el resultado por pantalla"""
+
+magnitud = int(input("Por favor ingrese la magnitud del terrmoto: "))
+if magnitud<3:
+    print("Muy leve")
+elif magnitud>=3 and magnitud<4:
+    print("Leve. Ligeramente perceptible")
+elif magnitud>=4 and magnitud<5:
+    print("Moderado. Sentido por algunas personas, pero generalmente no causa daño")
+elif magnitud>=5 and magnitud<6:
+    print("Fuerte. Puede causar daños en estructuras débiles.")
+elif magnitud>=6 and magnitud<7:
+    print("Muy fuerte. Puede causar daños significativos.")
+elif magnitud>=7:
+    print("Extremo. Puede causar grandes daños a gran escala.")
+
