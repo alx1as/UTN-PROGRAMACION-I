@@ -41,12 +41,7 @@ if len(contraseña)>7 and len(contraseña)<15: #Si la longitud de la contraseña
 else:
     print("Por favor ingrese una contraseña de entre 8 y 14 caracteres: ")"""
 
-# 6)Escribir un programa que tome los numeros_aleatorios, calcule su moda, su mediana y su media y las compare para determinar si hay sesgo positivo, negativo o no hay sesgo.
-# 1. MEDIA (mean): 
-# 2. MEDIANA (median): si es impar [10, 20, 30, 40, 50] la mediana es 30, el número central. Si es par se hace el promedio de los dos números centrales: [10, 20, 30, 40] output 25. 20+30 = 50 /2
-# 3. MODA (mode): es el número que más se repite en una lista.
-
-# Imprimir el resultado por pantalla. 
+# 6)Escribir un programa que tome los numeros_aleatorios, calcule su moda, su mediana y su media y las compare para determinar si hay sesgo positivo, negativo o no hay sesgo. Imprimir el resultado por pantalla. 
 
 import random
 from statistics import mode, median, mean
@@ -54,4 +49,17 @@ numeros_aleatorios = [random.randint(1,100) for i in range(50)] #Lista de 50 nú
 
 media = mean(numeros_aleatorios) #es el promedio de la lista de números
 mediana = median(numeros_aleatorios) #número central o promedio de 2 números centrales.
-moda = mode(numeros_aleatorios) #es el número que más se repite de la lista
+moda = mode(numeros_aleatorios) #es el número que más se repite de la lista.
+
+if moda<mediana<media:
+    print("Sesgo positivo o a la derecha")
+elif media<mediana and mediana<moda:
+    print("Sesgo negativo o a la izquierda")
+elif media==mediana and mediana==moda:
+    print("Sin sesgo")
+
+#imprimir resultados en pantalla
+print(f"Números aleatorios: {numeros_aleatorios}")
+print(f"Media: {media}")
+print(f"Mediana: {mediana}")
+print(f"Moda: {moda}")
