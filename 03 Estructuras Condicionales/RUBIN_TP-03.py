@@ -83,9 +83,9 @@ elif tipo==2:
 elif tipo==3:
     print(nombre.title())
 
-#9) Escribir un programa que pida al usuario la magnitud de un terremoto, clasifique la magnitud en una de las siguientes categorías según la escala de Richter e imprima el resultado por pantalla"""
+#9) Escribir un programa que pida al usuario la magnitud de un terremoto, clasifique la magnitud en una de las siguientes categorías según la escala de Richter e imprima el resultado por pantalla
 
-magnitud = int(input("Por favor ingrese la magnitud del terrmoto: "))
+magnitud = int(input("Por favor ingrese la magnitud del terremoto: "))
 if magnitud<3:
     print("Muy leve")
 elif magnitud>=3 and magnitud<4:
@@ -98,4 +98,16 @@ elif magnitud>=6 and magnitud<7:
     print("Muy fuerte. Puede causar daños significativos.")
 elif magnitud>=7:
     print("Extremo. Puede causar grandes daños a gran escala.")
+
+#10)Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla si el usuario se encuentra en otoño, invierno, primavera o verano."""
+
+hemisferio= input("Ingrese en cúal hemisferio se encuentra (N/S): ")
+mes=int(input("Ingrese qué mes es: "))
+dia=int(input("Ingrese qué día es: "))
+
+
+estacion = "invierno" if (mes == 12 and dia>=21) or (mes==1 or mes==2) or (mes==3 and dia<=20) else None
+if estacion == "invierno":
+    print("Es invierno")
+
 
