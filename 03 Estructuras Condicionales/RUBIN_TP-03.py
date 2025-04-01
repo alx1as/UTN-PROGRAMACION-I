@@ -39,7 +39,7 @@ contraseña = input("Por favor, ingrese una contraseña de 8 a 14 caracteres: ")
 if len(contraseña)>7 and len(contraseña)<15: #Si la longitud de la contraseña es mayor a 7 y menor a 15
     print("Ha ingresado una contraseña correcta")
 else:
-    print("Por favor ingrese una contraseña de entre 8 y 14 caracteres: ")"""
+    print("Por favor ingrese una contraseña de entre 8 y 14 caracteres: ")
 
 # 6)Escribir un programa que tome los numeros_aleatorios, calcule su moda, su mediana y su media y las compare para determinar si hay sesgo positivo, negativo o no hay sesgo. Imprimir el resultado por pantalla. 
 
@@ -63,3 +63,7 @@ print(f"Números aleatorios: {numeros_aleatorios}")
 print(f"Media: {media}")
 print(f"Mediana: {mediana}")
 print(f"Moda: {moda}")
+
+#7) Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado termina con vocal, añadir un signo de exclamación al final e imprimir el string resultante por pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por pantalla."""
+
+palabra = input("Escribe una palabra o frase: ")
