@@ -1,4 +1,5 @@
-"""# 1) Solicitar la edad del usuario. Si el usuario es mayor de 18 años, mostrar un mensaje en pantalla que diga “Es mayor de edad”.
+# 1) Solicitar la edad del usuario. Si el usuario es mayor de 18 años, mostrar un mensaje en pantalla que diga “Es mayor de edad”.
+
 edad = int(input("Por favor, ingrese su edad: "))
 if edad > 18:
     print("Es mayor de edad")
@@ -99,33 +100,32 @@ elif magnitud>=6 and magnitud<7:
 elif magnitud>=7:
     print("Extremo. Puede causar grandes daños a gran escala.")
 
-#10)Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla si el usuario se encuentra en otoño, invierno, primavera o verano."""
+#10)Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla si el usuario se encuentra en otoño, invierno, primavera o verano.
 hemisferio = input("Ingrese en cuál hemisferio se encuentra (N/S): ")
 mes = int(input("Ingrese el número del mes: "))
 dia = int(input("Ingrese qué día es: "))
 
 if hemisferio == "n" or hemisferio == "N": #hemisferio norte
-    if (mes == 12 and dia >= 21) or (mes == 1 or mes == 2) or (mes == 3 and dia <= 20):
+    if (mes==12 and dia>=21) or (mes==1 or mes==2) or (mes== 3 and dia<=20):
         estacion = "invierno"
-    elif (mes == 6 and dia >= 21) or (mes == 7 or mes == 8) or (mes == 9 and dia <= 20):
+    elif (mes== 6 and dia >= 21) or (mes==7 or mes == 8) or (mes==9 and dia<=20):
         estacion = "verano"
-    elif (mes == 9 and dia >= 21) or (mes == 10 or mes == 11) or (mes == 12 and dia <= 20):
+    elif (mes== 9 and dia >= 21) or (mes==10 or mes == 11) or (mes==2 and dia<=20):
         estacion = "otoño"
-    elif (mes == 3 and dia >= 21) or (mes == 4 or mes == 5) or (mes == 6 and dia <= 20):
+    elif (mes== 3 and dia >= 21) or (mes==4 or mes == 5) or (mes==6 and dia<=20):
         estacion = "primavera"
-    print(f"En el hemisferio norte es {estacion}.")
-
+    print(f"Es {estacion} en el hemisferio norte.")
+    
 elif hemisferio == "s" or hemisferio == "S": #hemisferio sur
-    if (mes == 12 and dia>=21) or (mes==1 or mes == 2) or (mes==3 and dia<=20):
+    if (mes==12 and dia>=21) or (mes==1 or mes==2) or (mes==3 and dia<=20):
         estacion = "verano"
-    elif (mes == 6 and dia>=21) or (mes==7 or mes == 8) or (mes==9 and dia<=20):
+    elif (mes==6 and dia>=21) or (mes==7 or mes==8) or (mes==9 and dia<=20):
         estacion = "invierno"
-    elif (mes == 9 and dia>=21) or (mes==10 or mes == 11) or (mes==12 and dia<=20):
+    elif (mes==9 and dia>=21) or (mes==10 or mes==1) or (mes==12 and dia<=20):
         estacion = "primavera"
-    elif (mes == 3 and dia>=21) or (mes==4 or mes == 5) or (mes==6 and dia<=20):
+    elif (mes==3 and dia>=21) or (mes==4 or mes==5) or (mes==6 and dia<=20):
         estacion = "otoño"
-    print(f"En el hemisferio sur es {estacion}.")
-
+    print(f"Es {estacion} en el hemisferio sur.")
 else:
     print("Hemisferio no válido")
 
