@@ -100,33 +100,34 @@ elif magnitud>=7:
     print("Extremo. Puede causar grandes daños a gran escala.")
 
 #10)Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla si el usuario se encuentra en otoño, invierno, primavera o verano."""
+hemisferio = input("Ingrese en cuál hemisferio se encuentra (N/S): ")
+mes = int(input("Ingrese el número del mes: "))
+dia = int(input("Ingrese qué día es: "))
 
-hemisferio= input("Ingrese en cúal hemisferio se encuentra (N/S): ")
-mes=int(input("Ingrese el número del mes: "))
-dia=int(input("Ingrese qué día es: "))
+if hemisferio == "n" or hemisferio == "N": #hemisferio norte
+    if (mes == 12 and dia >= 21) or (mes == 1 or mes == 2) or (mes == 3 and dia <= 20):
+        estacion = "invierno"
+    elif (mes == 6 and dia >= 21) or (mes == 7 or mes == 8) or (mes == 9 and dia <= 20):
+        estacion = "verano"
+    elif (mes == 9 and dia >= 21) or (mes == 10 or mes == 11) or (mes == 12 and dia <= 20):
+        estacion = "otoño"
+    elif (mes == 3 and dia >= 21) or (mes == 4 or mes == 5) or (mes == 6 and dia <= 20):
+        estacion = "primavera"
+    print(f"En el hemisferio norte es {estacion}.")
 
-#en el hemisferio norte
-if hemisferio== "n" or hemisferio=="N":
-    #invierno: desde el 21 de diciembre hasta el 20 de marzo
-    estacion = "invierno" if (mes == 12 and dia>=21) or (mes==1 or mes==2) or (mes==3 and dia<=20) else None
-    #Verano: desde el 21 de junio hasta el 20 de septiembre 
-    estacion = "verano" if (mes == 6 and dia>=21) or (mes==7 or mes==8) or (mes==9 and dia<=20) else None
-    #Otoño: Desde el 21 de septiembre hasta el 20 de diciembre
-    estacion = "otoño" if (mes==9 and dia>=21) or (mes==10 or mes==11) or (mes==11 and dia<=20) else None
-    #Primavera: Desde el 21 de marzo hasta el 20 de junio
-    estacion = "primavera" if (mes==3 and dia>=21) or (mes==4 or mes==5) or (mes==6 and dia<=20) else None
+elif hemisferio == "s" or hemisferio == "S": #hemisferio sur
+    if (mes == 12 and dia>=21) or (mes==1 or mes == 2) or (mes==3 and dia<=20):
+        estacion = "verano"
+    elif (mes == 6 and dia>=21) or (mes==7 or mes == 8) or (mes==9 and dia<=20):
+        estacion = "invierno"
+    elif (mes == 9 and dia>=21) or (mes==10 or mes == 11) or (mes==12 and dia<=20):
+        estacion = "primavera"
+    elif (mes == 3 and dia>=21) or (mes==4 or mes == 5) or (mes==6 and dia<=20):
+        estacion = "otoño"
+    print(f"En el hemisferio sur es {estacion}.")
 
+else:
+    print("Hemisferio no válido")
 
-
-
-
-
-
-
-
-
-
-if estacion == "invierno":
-    print("Es invierno")
 
 
