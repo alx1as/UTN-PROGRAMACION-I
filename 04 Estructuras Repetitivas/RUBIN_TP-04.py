@@ -18,10 +18,22 @@ else:
     for n2 in range(n2+1,n1): #si n2 es menor a n1
         suma+=n2
 print(suma)
-#4)Elabora un programa que permita al usuario ingresar números enteros y los sume en secuencia. El programa debe detenerse y mostrar el total acumulado cuando el usuario ingrese un 0."""
+#4)Elabora un programa que permita al usuario ingresar números enteros y los sume en secuencia. El programa debe detenerse y mostrar el total acumulado cuando el usuario ingrese un 0.
 suma=0
 nro=int(input("Por favor ingrese un número entero (0 para detener): "))
 while nro != 0:
     suma+=nro
     nro = int(input("Ingrese otro número (0 para detener): "))
-print(suma)
+print(suma)"""
+
+#5) Crea un juego en el que el usuario deba adivinar un número aleatorio entre 0 y 9. Al final, el programa debe mostrar cuántos intentos fueron necesarios para acertar el número.
+
+import random
+intentos=0
+nro= random.randint(1,9)
+nroUser = int(input("Por favor, ingrese un número del 1 al 9: "))
+
+while nroUser !=nro:
+    nroUser = int(input("Incorrecto. Por favor ingrese otro número: "))
+    intentos+=1
+print(f"Acertaste, felicidades! el número correcto es {nro}. Lo conseguiste en {intentos} intentos.")
