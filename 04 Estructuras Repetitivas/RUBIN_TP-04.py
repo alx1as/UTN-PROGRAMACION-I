@@ -35,8 +35,17 @@ nroUser = int(input("Por favor, ingrese un número del 1 al 9: "))
 while nroUser !=nro:
     nroUser = int(input("Incorrecto. Por favor ingrese otro número: "))
     intentos+=1
-print(f"Acertaste, felicidades! el número correcto es {nro}. Lo conseguiste en {intentos} intentos.")"""
+print(f"Acertaste, felicidades! el número correcto es {nro}. Lo conseguiste en {intentos} intentos.")
 
 #6) Desarrolla un programa que imprima en pantalla todos los números pares comprendidos entre 0 y 100, en orden decreciente.
 for i in range(100,0,-2):
-    print(i)
+    print(i)"""
+
+#7) Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un número entero positivo indicado por el usuario.
+tope= int(input("Ingrese un número positivo: "))
+suma = 0
+for i in range(0,tope+1):
+    suma+=i
+print(f"La suma de todos los números comprendidos entre 0 y {tope} es de: {suma}")
+
+#8)Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una cantidad menor, pero debe estar preparado para procesar 100 números con un solo cambio).
