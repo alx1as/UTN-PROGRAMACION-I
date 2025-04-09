@@ -1,4 +1,4 @@
-"""#1)Imprimir en pantalla todos los números enteros desde 0 hasta 100 (incluyendo ambos extremos), en orden creciente, mostrando un número por línea.
+#1)Imprimir en pantalla todos los números enteros desde 0 hasta 100 (incluyendo ambos extremos), en orden creciente, mostrando un número por línea.
 for i in range(101):
     print(i)
 #2) Solicitar al usuario un número entero y determine la cantidad de dígitos que contiene.
@@ -73,7 +73,7 @@ for i in range(100):
     suma+=nro
 print("El promedio de todos los números ingresados es de: " ,suma/100)
 
-#10)  Desarrolla un programa que calcule el factorial de un número entero dado por el usuario. Ejemplo: para el número 5, el resultado debe ser 5! = 5 × 4 × 3 × 2 × 1"""
+#10)  Desarrolla un programa que calcule el factorial de un número entero dado por el usuario. Ejemplo: para el número 5, el resultado debe ser 5! = 5 × 4 × 3 × 2 × 1
 factorial=1
 nro=int(input("Ingrese un número entero:"))
 for i in range(nro, 0, -1):
