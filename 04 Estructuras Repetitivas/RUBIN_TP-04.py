@@ -66,11 +66,16 @@ for i in range(100):
         negativos+=1
 print(f"En total hay:\n {(pares)} números pares.\n {(impares)} números impares.\n {(positivos)} números positivos.\n y {(negativos)} números negativos.")
 
-#9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe poder procesar 100 números cambiando solo un valor)."""
+#9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe poder procesar 100 números cambiando solo un valor).
 suma=0
 for i in range(100):
     nro=int(input("Por favor, ingrese un número entero: "))
     suma+=nro
 print("El promedio de todos los números ingresados es de: " ,suma/100)
 
-#10)  Desarrolla un programa que calcule el factorial de un número entero dado por el usuario. Ejemplo: para el número 5, el resultado debe ser 5! = 5 × 4 × 3 × 2 × 1
+#10)  Desarrolla un programa que calcule el factorial de un número entero dado por el usuario. Ejemplo: para el número 5, el resultado debe ser 5! = 5 × 4 × 3 × 2 × 1"""
+factorial=1
+nro=int(input("Ingrese un número entero:"))
+for i in range(nro, 0, -1):
+    factorial*=i
+print(f"El factorial de 5 es: {factorial}")
