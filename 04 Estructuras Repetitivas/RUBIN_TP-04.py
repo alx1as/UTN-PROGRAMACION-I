@@ -48,7 +48,7 @@ for i in range(0,tope+1):
     suma+=i
 print(f"La suma de todos los números comprendidos entre 0 y {tope} es de: {suma}")
 
-#8)Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una cantidad menor, pero debe estar preparado para procesar 100 números con un solo cambio)."""
+#8)Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una cantidad menor, pero debe estar preparado para procesar 100 números con un solo cambio).
 pares=0
 impares=0
 negativos=0
@@ -65,4 +65,12 @@ for i in range(100):
     else:
         negativos+=1
 print(f"En total hay:\n {(pares)} números pares.\n {(impares)} números impares.\n {(positivos)} números positivos.\n y {(negativos)} números negativos.")
-    
+
+#9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe poder procesar 100 números cambiando solo un valor)."""
+suma=0
+for i in range(100):
+    nro=int(input("Por favor, ingrese un número entero: "))
+    suma+=nro
+print("El promedio de todos los números ingresados es de: " ,suma/100)
+
+#10)  Desarrolla un programa que calcule el factorial de un número entero dado por el usuario. Ejemplo: para el número 5, el resultado debe ser 5! = 5 × 4 × 3 × 2 × 1
