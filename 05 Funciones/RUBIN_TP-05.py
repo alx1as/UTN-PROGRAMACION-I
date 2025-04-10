@@ -6,7 +6,7 @@ def hola_mundo(mensaje):
 #principal
 hola_mundo(mensaje)
 
-#2)Crear una función llamada saludar_usuario(nombre) que reciba como parámetro un nombre y devuelva un saludo personalizado. Por ejemplo, si se llama con saludar_usuario("Marcos"), deberá devolver “Hola Marcos!”. Llamar a esta función desde el programa principal solicitando el nombre al usuario."""
+#2)Crear una función llamada saludar_usuario(nombre) que reciba como parámetro un nombre y devuelva un saludo personalizado. Por ejemplo, si se llama con saludar_usuario("Marcos"), deberá devolver “Hola Marcos!”. Llamar a esta función desde el programa principal solicitando el nombre al usuario.
 def saludar_usuario(nombre):
     saludo="Hola " + nombre + "!"
     return saludo
@@ -14,3 +14,34 @@ def saludar_usuario(nombre):
 #principal
 nombre=input("Ingreśa tu nombre: ")
 print(saludar_usuario(nombre))
+
+#3) Crear una función llamada informacion_personal(nombre, apellido, edad, residencia) que reciba cuatro parámetros e imprima: “Soy [nombre] [apellido], tengo [edad] años y vivo en [residencia]”. Pedir los datos al usuario y llamar a esta función con los valores ingresados.
+def informacion_personal(nombre,apellido,edad,residencia):
+    informacion = (f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}.")
+    print(informacion)
+
+#principal
+nombre=input("Ingresá tu nombre: ")
+apellido=input("Ingresá tu apellido: ")
+edad=input("Ingresá tu edad: ")
+residencia=input("Ingresá tu residencia: ")
+informacion_personal(nombre, apellido, edad, residencia)
+
+#4) Crear dos funciones: calcular_area_circulo(radio) que reciba el radio como parámetro y devuelva el área del círculo. calcular_perimetro_circulo(radio) que reciba el radio como parámetro y devuelva el perímetro del círculo. Solicitar el radio al usuario y llamar ambas funciones para mostrar los resultados."""
+def calcular_perimetro_circulo(radio):
+    perimetro= (2*pi*radio)
+    return perimetro
+
+def calcular_area_circulo(radio):
+    area= (pi*(radio**2))
+    return area
+
+#principal 
+pi=3.1416
+radio = int(input("Ingrese el radio del círculo: "))
+calcular_area_circulo(radio)
+calcular_perimetro_circulo(radio)
+
+perimetro = calcular_perimetro_circulo(radio)
+area= calcular_area_circulo(radio)
+print("El perímetro del círculo es: ",perimetro, ". El area es: ",area )
