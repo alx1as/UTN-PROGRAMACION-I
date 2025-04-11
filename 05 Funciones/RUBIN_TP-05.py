@@ -46,7 +46,7 @@ perimetro = calcular_perimetro_circulo(radio)
 area= calcular_area_circulo(radio)
 print("El perímetro del círculo es: ",perimetro, ". El area es: ",area )
 
-#5)Crear una función llamada segundos_a_horas(segundos) que recibauna cantidad de segundos como parámetro y devuelva la cantidad e horas correspondientes. Solicitar al usuario los segundos y mostrar el resultado usando esta función."""
+#5)Crear una función llamada segundos_a_horas(segundos) que recibauna cantidad de segundos como parámetro y devuelva la cantidad e horas correspondientes. Solicitar al usuario los segundos y mostrar el resultado usando esta función.
 
 def segundos_a_horas(segundos):
     horas=segundos/3600
@@ -54,4 +54,15 @@ def segundos_a_horas(segundos):
 #principal
 segundos=int(input("Ingrese los segundos:"))
 horas= segundos_a_horas(segundos)
-print(f"{segundos} segundos es igual a {horas} horas.")
+print(f"{segundos} segundos es igual a {horas} horas.")"""
+
+#6) Crear una función llamada tabla_multiplicar(numero) que reciba un número como parámetro y imprima la tabla de multiplicar de ese número del 1 al 10. Pedir al usuario el número y llamar a la función.
+
+def tabla_de_multiplicar(numero):
+    for i in range(11):
+        multiplicar=numero
+        multiplicar*=i
+        print(f"{numero} x {i} = {multiplicar}")
+#principal
+numero = int(input("Ingrese un número: "))
+tabla_de_multiplicar(numero)
