@@ -1,5 +1,5 @@
 
-"""#1) Crear una función llamada imprimir_hola_mundo que imprima por pantalla el mensaje: “Hola Mundo!”. Llamar a esta función desde el programa principal.
+#1) Crear una función llamada imprimir_hola_mundo que imprima por pantalla el mensaje: “Hola Mundo!”. Llamar a esta función desde el programa principal.
 mensaje="Hola mundo!" 
 def hola_mundo(mensaje):
     print(mensaje) 
@@ -105,7 +105,7 @@ celsius=float(input("Ingrese la temperatura en grados celsius: "))
 fahrenheit = celsius_a_fahrenheit(celsius) #llamo a la función y lo que devuelve lo guardo en la variable fahrenheit.
 print(f"Los grados ingresados corresponden a {fahrenheit}° Fahrenheit")
 
-#10) Crear una función llamada calcular_promedio(a, b, c) que reciba tres números como parámetros y devuelva el promedio de ellos. Solicitar los números al usuario y mostrar el resultado usando esta función."""
+#10) Crear una función llamada calcular_promedio(a, b, c) que reciba tres números como parámetros y devuelva el promedio de ellos. Solicitar los números al usuario y mostrar el resultado usando esta función.
 def calcular_promedio(a,b,c):
     sum=a+b+c
     prom= sum/3
