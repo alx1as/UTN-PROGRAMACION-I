@@ -11,7 +11,7 @@ n=int(input("Ingrese un número entero: "))
 
 #Bucle para recorrer los números entre 1 y el número ingresado por el usuario:
 for i in range(1, n+1):
-   print(f"{i}! = {fac(i)}") #Llamo a la función recursiva con cada i hasta el número elegido."""
+   print(f"{i}! = {fac(i)}") #Llamo a la función recursiva con cada i hasta el número elegido.
 
 #2. Crea una función recursiva que calcule el valor de la serie de Fibonacci en la posición indicada. Posteriormente, muestra la serie completa hasta la posición que el usuario especifique.
 #fibonacci: sucesión numérica donde cada termino es la suma de los dos anteriores. 
@@ -25,6 +25,37 @@ def fib(posicion):
         return 1
     else:
         return fib(posicion-1) + fib(posicion-2) #suma del valor en n-1 y n-2. 
-print(f"El número en la posición {posicion} de la serie Fibonacci es: {fib(posicion)}") #valor de la serie en la posición indicada
+print(f"El valor de la serie Fibonacci en la posición {posicion} es: {fib(posicion)}") #valor de la serie en la posición indicada
 for i in range(1, posicion +1):
     print(fib(posicion-i)) #imprime desde la posición restando 1 el índice hasta el corte base de la recursión.
+
+#3 Crear una función recursiva  que calcule la potencia de un número base elevado a un exponente, utilizando la formula. Prueba esta función en un algoritmo general.
+
+def potencia(base,exponente):
+    if exponente==0: return 1 
+#Segun la formula si quiero calcular un numero n(base) elevado a la potencia m(exponente) podria hacerlo multipliciando n por si mismo m-1 veces.
+    else: return base*potencia(base, exponente-1)
+
+def gral():
+    base=int(input("Escriba la base:"))
+    exponente=int(input("Escriba el exponente: "))
+    resultado=potencia(base,exponente)
+    print(f"La potencia de {base} elevado a {exponente} es {resultado}")
+gral()
+
+#4
+Crear una función recursiva en Python que reciba un número entero positivo en base
+decimal y devuelva su representación en binario como una cadena de texto.
+Cuando representamos un número en binario, lo expresamos usando solamente ceros (0) y
+unos (1), en base 2. Para convertir un número decimal a binario, se puede seguir este
+procedimiento:
+Dividir el número por 2.
+Guardar el resto (0 o 1).
+Repetir el proceso con el cociente hasta que llegue a 0.
+Los restos obtenidos, leídos de abajo hacia arriba, forman el número binario."""
+
+def binario(n):
+    if n==0: return 
+    else: 
+       return binario(n//2) + str(n%2) #divido n entre 2 usando recursión y división entera // y concateno
+        
