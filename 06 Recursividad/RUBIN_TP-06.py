@@ -53,9 +53,40 @@ Dividir el número por 2.
 Guardar el resto (0 o 1).
 Repetir el proceso con el cociente hasta que llegue a 0.
 Los restos obtenidos, leídos de abajo hacia arriba, forman el número binario."""
-
 def binario(n):
-    if n==0: return 
-    else: 
-       return binario(n//2) + str(n%2) #divido n entre 2 usando recursión y división entera // y concateno
-        
+    if n == 0:
+        return "0"
+    elif n == 1:
+        return "1"
+    else:
+        return binario(n // 2) + str(n % 2)
+print(binario(13))
+
+#es palindromo
+def es_palindromo(palabra):
+    if len(palabra) <= 1:
+        return True
+    if palabra[0] != palabra[-1]:
+        return False
+    return es_palindromo(palabra[1:-1])
+
+#suma de digitos
+def suma_digitos(n):
+    if n < 10:
+        return n
+    return (n % 10) + suma_digitos(n // 10)
+
+#8a 
+def contar_bloques(n):
+    if n == 1:
+        return 1
+    return n + contar_bloques(n - 1)
+#8b
+def contar_digito(numero, digito):
+    if numero == 0:
+        return 0
+    if numero % 10 == digito:
+        return 1 + contar_digito(numero // 10, digito)
+    return contar_digito(numero // 10, digito)
+
+
